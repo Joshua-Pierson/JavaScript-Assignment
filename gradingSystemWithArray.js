@@ -5,7 +5,7 @@ let student =
     }
 
 
-    
+
 function getGrade(score) {
     if (score >= 90 && score <= 100) {
         return "Hello " + student.name + ", your score is " + student.score + " your grade is A.";
