@@ -1,12 +1,14 @@
 let student = 
     {
-        name: "Joshua",
+        name: prompt("Enter your name"),
         score: 95,
     }
 
+function studentGrading (studentName, studentScore) {
+    return "Hello " + studentName + ", your score is " + studentScore + ", your grade is A.";
+}
 
-
-function getGrade(score) {
+function getGrade( name, score) {
     if (score >= 90 && score <= 100) {
         return "Hello " + student.name + ", your score is " + student.score + " your grade is A.";
     } else if (score >= 80 && score < 90) {
