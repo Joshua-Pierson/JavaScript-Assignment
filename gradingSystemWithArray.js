@@ -4,11 +4,9 @@ let student =
         score: 95,
     }
 
-function studentGrading (studentName, studentScore) {
-    return "Hello " + studentName + ", your score is " + studentScore + ", your grade is A.";
-}
+let score = student.score; // this will get the score of the student
 
-function getGrade( name, score) {
+function getGrade(score) {
     if (score >= 90 && score <= 100) {
         return "Hello " + student.name + ", your score is " + student.score + " your grade is A.";
     } else if (score >= 80 && score < 90) {
@@ -20,4 +18,4 @@ function getGrade( name, score) {
     }
 }
 
-console.log(getGrade(student.score)); // this will print the grade of the student based on the score.
+console.log(getGrade(score)); // this will print the grade of the student based on the score.
